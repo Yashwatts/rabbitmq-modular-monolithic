@@ -22,9 +22,7 @@ function getModuleFromEnv(): ModuleName | undefined {
 
 const moduleName = getModuleFromEnv();
 
-const migrations = [
-  __dirname + `/../../${moduleName}/migrations/*.{ts,js}`,
-];
+const migrations = [__dirname + `/../../${moduleName}/migrations/*.{ts,js}`];
 
 const entities = [__dirname + `/../../${moduleName}/entities/*.entity.{ts,js}`];
 
