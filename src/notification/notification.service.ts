@@ -6,7 +6,7 @@ import { Repository } from 'typeorm';
 @Injectable()
 export class NotificationService {
   constructor(
-    @InjectRepository(Notification, 'notificationConnection')
+    @InjectRepository(Notification)
     private readonly notificationRepository: Repository<Notification>,
   ) {}
 

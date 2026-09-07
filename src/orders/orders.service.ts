@@ -8,7 +8,7 @@ import { RabbitMQPublisher } from './rabbitmq/rabbitmq.publisher';
 @Injectable()
 export class OrdersService {
   constructor(
-    @InjectRepository(Order, 'orderConnection')
+    @InjectRepository(Order)
     private readonly orderRepository: Repository<Order>,
     private readonly rabbitMQPublisher: RabbitMQPublisher,
   ) {}
